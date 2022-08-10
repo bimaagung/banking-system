@@ -4,15 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "start-dev": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "apollo-server": "^3.10.0",
+    "apollo-server-core": "^3.10.0",
+    "apollo-server-express": "^3.10.0",
+    "express": "^4.18.1",
+    "graphql": "^16.5.0",
+    "nodemon": "^2.0.19",
     "pg": "^8.7.3",
     "pg-hstore": "^2.3.4",
-    "sequelize": "^6.21.3"
+    "sequelize": "^6.21.3",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "sequelize-cli": "^6.4.1"

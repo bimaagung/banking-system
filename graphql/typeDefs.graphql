@@ -1,0 +1,17 @@
+scalar Date
+
+type Query {
+  getAllCustomer: [Customer]
+  getCustomerById(idCustomer: String): Customer
+}
+
+type Customer {
+  idCustomer: String
+  name: String
+  telp: Int
+  address: String
+  email: String
+  password: String
+  createdAt: Date
+  updatedAt: Date
+}

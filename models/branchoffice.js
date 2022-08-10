@@ -1,4 +1,3 @@
-'use strict';
 const { Model } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
   class BranchOffice extends Model {
@@ -37,11 +36,11 @@ module.exports = (sequelize, DataTypes) => {
         },
       },
       telpBranch: {
-        type: DataTypes.INTEGER(20),
+        type: DataTypes.INTEGER,
         allowNull: false,
         validate: {
           notEmpty: true,
-          isInt,
+          isInt: true,
         },
       },
       createdAt: {
