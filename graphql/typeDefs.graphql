@@ -15,3 +15,28 @@ type Customer {
   createdAt: Date
   updatedAt: Date
 }
+
+type Mutation {
+  createCustomer(
+    name: String
+    telp: Int
+    address: String
+    email: String
+    password: String
+  ): String
+}
+
+type Mutation {
+  updateCustomer(
+    idCustomer: String
+    name: String
+    telp: Int
+    address: String
+    email: String
+    password: String
+  ): String
+}
+
+type Mutation {
+  deleteCustomer(idCustomer: String): String
+}

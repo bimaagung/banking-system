@@ -17,7 +17,6 @@ module.exports = (sequelize, DataTypes) => {
         defaultValue: DataTypes.UUIDV4,
         validate: {
           notEmpty: true,
-          isUUID: true,
         },
       },
       idAccount: {

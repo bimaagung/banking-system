@@ -25,7 +25,6 @@ module.exports = (sequelize, DataTypes) => {
         defaultValue: DataTypes.UUIDV4,
         validate: {
           notEmpty: true,
-          isUUID: true,
         },
       },
       saldo: {
@@ -41,7 +40,6 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false,
         validate: {
           notEmpty: true,
-          isUUID: true,
         },
       },
       idCustomer: {
@@ -49,7 +47,6 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false,
         validate: {
           notEmpty: true,
-          isUUID: true,
         },
       },
       createdAt: {
